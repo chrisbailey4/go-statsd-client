@@ -35,6 +35,9 @@ var statsdPacketTests = []struct {
 	{"test", "GaugeDelta", "gauge", int64(-1), 1.0, "test.gauge:-1|g"},
 	{"test", "GaugeFloatDelta", "gauge", float64(1.1), 1.0, "test.gauge:+1.1|g"},
 	{"test", "GaugeFloatDelta", "gauge", float64(-1.1), 1.0, "test.gauge:-1.1|g"},
+	{"test", "Histogram", "histogram", int64(100), 1.0, "test.histogram:100|h"},
+	{"test", "HistogramFloat", "histogram", -1.1, 1.0, "test.histogram:-1.1|h"},
+
 	{"test", "SetFloat", "floatset", float64(1.1), 1.0, "test.floatset:1.1|s"},
 	{"test", "SetFloat", "floatset", float64(-1.1), 1.0, "test.floatset:-1.1|s"},
 
@@ -51,6 +54,8 @@ var statsdPacketTests = []struct {
 	{"", "GaugeDelta", "gauge", int64(-1), 1.0, "gauge:-1|g"},
 	{"", "GaugeFloatDelta", "gauge", float64(1.1), 1.0, "gauge:+1.1|g"},
 	{"", "GaugeFloatDelta", "gauge", float64(-1.1), 1.0, "gauge:-1.1|g"},
+	{"", "Histogram", "histogram", int64(100), 1.0, "histogram:100|h"},
+	{"", "HistogramFloat", "histogram", -1.1, 1.0, "histogram:-1.1|h"},
 	{"", "SetFloat", "floatset", float64(1.1), 1.0, "floatset:1.1|s"},
 	{"", "SetFloat", "floatset", float64(-1.1), 1.0, "floatset:-1.1|s"},
 }
