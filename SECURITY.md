@@ -17,5 +17,5 @@ If the issue is accepted, a comment to that effect will be made in the original 
 
 If the issue is declined, a comment to that effect will be made in the original issue.
 
-[1]: https://github.com/cactus/go-statsd-client/releases
+[1]: https://github.com/chrisbailey4/go-statsd-client/releases
 [2]: https://help.github.com/en/articles/about-maintainer-security-advisories
