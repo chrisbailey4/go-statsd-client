@@ -22,6 +22,7 @@ type StatSender interface {
 	GaugeDelta(string, int64, float32, ...Tag) error
 	Timing(string, int64, float32, ...Tag) error
 	TimingDuration(string, time.Duration, float32, ...Tag) error
+	Histogram(string, float64, float32, ...Tag) error
 	Set(string, string, float32, ...Tag) error
 	SetInt(string, int64, float32, ...Tag) error
 	Raw(string, string, float32, ...Tag) error
@@ -195,6 +196,18 @@ func (s *Client) TimingDuration(stat string, delta time.Duration, rate float32, 
 
 	ms := float64(delta) / float64(time.Millisecond)
 	return s.submit(stat, "", ms, "|ms", rate, tags)
+}
+
+// Histogram submits a statsd histogram type.
+// stat is a string name for the metric.
+// value is the value you wnt to record
+// rate is the sample rate (0.0 to 1.0).
+func (s *Client) Histogram(stat string, value float64, rate float32, tags ...Tag) error {
+	if !s.includeStat(rate) {
+		return nil
+	}
+
+	return s.submit(stat, "", value, "|h", rate, tags)
 }
 
 // Set submits a stats set type

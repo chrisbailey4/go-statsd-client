@@ -2,6 +2,10 @@ Changelog
 =========
 
 ## head
+
+
+## 5.1.0 2023-06-22
+*   Add Histogram metric type
 *   Fix for tag format in substatter. (GH-55)
 *   Add support for Floats in several situations. (GH-57)
 *   Add new ExtendedStatSender interface for the new Float methods.

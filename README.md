@@ -1,10 +1,10 @@
 go-statsd-client
 ================
 
-[![Build Status](https://github.com/cactus/go-statsd-client/workflows/unit-tests/badge.svg)](https://github.com/cactus/go-statsd-client/actions)
-[![GoDoc](https://godoc.org/github.com/cactus/go-statsd-client/statsd?status.png)](https://godoc.org/github.com/cactus/go-statsd-client/statsd)
-[![Go Report Card](https://goreportcard.com/badge/cactus/go-statsd-client)](https://goreportcard.com/report/cactus/go-statsd-client)
-[![License](https://img.shields.io/github/license/cactus/go-statsd-client.svg)](https://github.com/cactus/go-statsd-client/blob/master/LICENSE.md)
+[![Build Status](https://github.com/chrisbailey4/go-statsd-client/workflows/unit-tests/badge.svg)](https://github.com/chrisbailey4/go-statsd-client/actions)
+[![GoDoc](https://godoc.org/github.com/chrisbailey4/go-statsd-client/statsd?status.png)](https://godoc.org/github.com/chrisbailey4/go-statsd-client/statsd)
+[![Go Report Card](https://goreportcard.com/badge/chrisbailey4/go-statsd-client)](https://goreportcard.com/report/chrisbailey4/go-statsd-client)
+[![License](https://img.shields.io/github/license/chrisbailey4/go-statsd-client.svg)](https://github.com/chrisbailey4/go-statsd-client/blob/master/LICENSE.md)
 
 ## About
 
@@ -22,7 +22,7 @@ Some examples:
 import (
     "log"
 
-    "github.com/cactus/go-statsd-client/v5/statsd"
+    "github.com/chrisbailey4/go-statsd-client/v5/statsd"
 )
 
 func main() {
@@ -109,7 +109,7 @@ or interrupt existing integrations.
 import (
     "log"
 
-    "github.com/cactus/go-statsd-client/v5/statsd"
+    "github.com/chrisbailey4/go-statsd-client/v5/statsd"
 )
 
 func main() {
@@ -152,7 +152,7 @@ Released under the [MIT license][3]. See `LICENSE.md` file for details.
 
 
 [1]: https://github.com/etsy/statsd
-[2]: http://godoc.org/github.com/cactus/go-statsd-client/
+[2]: http://godoc.org/github.com/chrisbailey4/go-statsd-client/
 [3]: http://www.opensource.org/licenses/mit-license.php
-[4]: https://github.com/cactus/go-statsd-client/graphs/contributors
+[4]: https://github.com/chrisbailey4/go-statsd-client/graphs/contributors
 [5]: https://github.com/etsy/statsd/wiki#client-implementations
